@@ -1,12 +1,8 @@
-# BEGIN (mt) controlled settings
-<IfModule !mod_fcgid.c>
-  AddHandler php-stable .php
-</IfModule>
-<IfModule mod_fcgid.c>
-  AddHandler fcgid-script .php
-  FcgidWrapper /etc/apache2/gs-bin/php-stable-wrapper .php
-  <Files *.php>
-    Options +ExecCGI
-  </Files>
-</IfModule>
-# END (mt) controlled settings
+RewriteEngine on
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.nocountry.studio [NC]
+RewriteRule ^(.*)$ http://nocountry.studio/$1 [R=301,L]
+
+RewriteEngine on
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
