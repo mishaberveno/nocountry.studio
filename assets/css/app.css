@@ -123,6 +123,10 @@
    font-style: bold;
 }
 
+img {
+    width: 200px;
+}
+
 h4 {
     font: 400 2rem 'Pitch', monospace;
     margin-top: -15px;
