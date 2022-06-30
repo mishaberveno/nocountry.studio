@@ -128,10 +128,20 @@ img {
 }
 
 h4 {
-    font: 400 2rem 'Pitch', monospace;
-    margin-top: -15px;
+    font-family: Pitch, monospace;
     font-size: 1.5rem;
     color: #0E0E0E;
+}
+
+.text {
+    font-family: Pitch, monospace;
+    font-size: 1rem
+    line-height: 1.4rem;
+    color: #0E0E0E;
+}
+
+.text-header {
+    font-style: bold;
 }
 
 a { 
@@ -140,15 +150,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-.text {
-    font: 1rem/1.4 'Pitch', monospace;
-    color: #0E0E0E;
-}
-
-.text-header {
-    font-style: bold;
 }
 
 @media (min-width: 768px) {
