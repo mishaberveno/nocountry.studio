@@ -108,22 +108,29 @@
 
 /* WEBSITE
 ======= */
+
+@font-face {
+   font-family: 'Pitch';
+   src: url('/assets/fonts/pitch-regular.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
  
-h2, 
-h4 { 
-    font: 400 2rem 'Playfair Display', serif;
-    color: #333;
+@font-face {
+   font-family: 'Pitch';
+   src: url('/assets/fonts/pitch-bold.woff2') format('woff2');
+   font-weight: normal;
+   font-style: bold;
 }
 
 h4 {
+    font: 400 2rem 'Pitch', monospace;
     margin-top: -15px;
     font-size: 1.5rem;
-    font-style: italic;
-    color: #555;
+    color: #0E0E0E;
 }
 
 a { 
-    color: #2ba6cb;
     text-decoration: none;
 }
 
@@ -132,12 +139,12 @@ a:hover {
 }
 
 .text {
-    font: 1rem/1.4 'Playfair Display', serif;
-    color: #333;
+    font: 1rem/1.4 'Pitch', monospace;
+    color: #0E0E0E;
 }
 
 .text-header {
-    font-size: 1.2rem;
+    font-style: bold;
 }
 
 @media (min-width: 768px) {
