@@ -110,14 +110,14 @@
 ======= */
 
 @font-face {
-   font-family: 'Pitch';
+   font-family: 'Pitch-regular';
    src: url('/assets/fonts/pitch-regular.woff2') format('woff2');
    font-weight: normal;
    font-style: normal;
 }
  
 @font-face {
-   font-family: 'Pitch';
+   font-family: 'Pitch-bold';
    src: url('/assets/fonts/pitch-bold.woff2') format('woff2');
    font-weight: normal;
    font-style: bold;
@@ -128,20 +128,20 @@ img {
 }
 
 h4 {
-    font-family: Pitch;
+    font-family: Pitch-regular;
     font-size: 1.5rem;
     color: #0E0E0E;
 }
 
 .text {
-    font-family: Pitch;
+    font-family: Pitch-regular;
     font-size: 1rem
     line-height: 1.4rem;
     color: #0E0E0E;
 }
 
 .text-header {
-    font-style: bold;
+    font-family: 'Pitch-bold';
 }
 
 a { 
