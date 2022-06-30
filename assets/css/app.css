@@ -124,17 +124,17 @@
 }
 
 img {
-    max-width: 250px;
+    max-width: 350px;
 }
 
 h4 {
-    font-family: Pitch, monospace;
+    font-family: Pitch;
     font-size: 1.5rem;
     color: #0E0E0E;
 }
 
 .text {
-    font-family: Pitch, monospace;
+    font-family: Pitch;
     font-size: 1rem
     line-height: 1.4rem;
     color: #0E0E0E;
