@@ -145,7 +145,7 @@ h4 {
     font-size:  1.25rem;
 }
 
-.text, .description {
+.text, .text-bio, .description {
     font-family: Pitch-regular;
     font-size: 1rem
     font-weight: normal;
@@ -192,4 +192,17 @@ a:hover {
     .float-right {
         float: right;
     }
+
+    .title,
+    .text-float-left,
+    .header-float-left {
+        float: left;
+    }
+
+    .header-bio,
+    .text-bio,
+    .title-float-right {
+        float: right;
+    }
+
 }
