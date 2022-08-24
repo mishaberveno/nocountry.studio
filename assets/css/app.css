@@ -183,12 +183,12 @@ a:hover {
         width: 100%;
     }
 
-    .header, .header-home {
+    .header {
         text-align: center;
         margin-top: 100px;
     }
 
-    .text-body {
+    .text {
         position: relative;
         margin-top: 50px;
         left: 32.5%;
@@ -208,8 +208,8 @@ a:hover {
         float: left;
     }
 
-    .header-bio,
-    .text-bio,
+    .header,
+    .text,
     .title-float-right {
         float: right;
     }
