@@ -133,7 +133,6 @@ img {
 
 h1, h4 {
     font-family: Pitch-regular;
-    font-size: 1.5rem;
     font-weight: normal;
     color: #EEE;
 }
@@ -142,7 +141,11 @@ h1 {
     font-size: 2rem;
 }
 
-.text {
+h4 {
+    font-size:  1.25rem;
+}
+
+.text, .description {
     font-family: Pitch-regular;
     font-size: 1rem
     font-weight: normal;
