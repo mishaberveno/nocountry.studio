@@ -170,10 +170,6 @@ img {
 
 a { 
     color: #EEE;
-    text-decoration: none;
-}
-
-a:hover {
     text-decoration: underline;
 }
 
@@ -208,8 +204,6 @@ a:hover {
         float: left;
     }
 
-    .header,
-    .text,
     .title-float-right {
         float: right;
     }
