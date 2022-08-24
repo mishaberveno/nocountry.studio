@@ -127,36 +127,45 @@ body {
    font-style: bold;
 }
 
-img {
-    max-width: 300px;
-}
-
-h1, h4 {
+h1 { 
     font-family: Pitch-regular;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #EEE;
+ }
+
+h4 {
+    font-family: Pitch-regular;
+    font-size: 1.5rem;
     font-weight: normal;
     color: #EEE;
 }
 
-h1 {
-    font-size: 2rem;
-}
-
-h4 {
-    font-size:  1.25rem;
-}
-
-.text, .text-bio, .description {
+.text { 
     font-family: Pitch-regular;
     font-size: 1rem
     font-weight: normal;
     line-height: 1.4rem;
     color: #EEE;
+ }
+
+ .text-header {
+    font-family: 'Pitch-bold';
+    font-size: 1.2rem;
+    font-style: bold;
 }
 
-.text-header {
-    font-family: 'Pitch-bold';
-    font-size: 1.2rem
-    font-style: bold;
+
+
+img {
+    max-width: 300px;
+}
+
+.img-bio {
+    margin-top: 16px;
+}
+
+.text, .text-bio, .description {
 }
 
 a { 
@@ -174,7 +183,7 @@ a:hover {
         width: 100%;
     }
 
-    .header {
+    .header, .header-home {
         text-align: center;
         margin-top: 100px;
     }
