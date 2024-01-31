@@ -127,42 +127,42 @@ body {
    font-style: bold;
 }
 
-h1 { 
+h2 {
     font-family: Pitch-regular;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: normal;
+    font-style: normal;
     color: #EEE;
- }
-
-h4 {
-    font-family: Pitch-regular;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #EEE;
-}
-
-.subtitle {
     margin-top: -15px;
 }
 
-.text { 
+h3 {
+    font-family: Pitch-regular;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: normal;
+    color: #EEE;
+}
+
+h4 {
+    font-family: Pitch-bold;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: bold;
+    color: #EEE;
+}
+
+.portfolio h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p {
     font-family: Pitch-regular;
     font-size: 1rem
     font-weight: normal;
     line-height: 1.4rem;
     color: #EEE;
- }
-
- .text-header {
-    font-family: 'Pitch-bold';
-    font-size: 1.2rem;
-    font-style: bold;
-    color: #EEE;
-}
-
-.bio {
-    max-width: 600px;
-    padding-bottom: 25px;
 }
 
 .logo {
@@ -170,13 +170,26 @@ h4 {
     margin: 50px 0 25px;
 }
 
-.img-bio {
-    margin-top: 16px;
-    width: 100px;
+.portfolio .logo {
+    max-width: 239px;
+}
+
+.photo {
+    margin-top: 21px;
+    width: 125px;
 }
 
 .month {
     margin-top: 16px;
+}
+
+.text {
+    max-width: 600px;
+    padding-bottom: 25px;
+}
+
+.text img {
+    margin-top: 24px;
 }
 
 a { 
@@ -187,6 +200,14 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+body.portfolio {
+    background-color: #F8F2ED;
+}
+
+.portfolio h2, .portfolio h3, .portfolio h4, .portfolio p, .portfolio a {
+    color: #0E0E0E;
+ }
 
 @media (min-width: 768px) {
     .main {
