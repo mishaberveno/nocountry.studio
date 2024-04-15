@@ -209,6 +209,10 @@ body.portfolio {
     color: #0E0E0E;
  }
 
+ #footer {
+    color: #BABABA;
+ }
+
 @media (min-width: 768px) {
     .main {
         display: inline-block;
