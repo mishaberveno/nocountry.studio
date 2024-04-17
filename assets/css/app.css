@@ -131,35 +131,21 @@ h2 {
     font-family: Pitch-regular;
     font-size: 1.4rem;
     font-weight: normal;
-    font-style: normal;
     color: #EEE;
     margin-top: -15px;
 }
 
 h3 {
-    font-family: Pitch-regular;
-    font-size: 1.4rem;
-    font-weight: normal;
-    font-style: normal;
-    color: #EEE;
-}
-
-h4 {
     font-family: Pitch-bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: normal;
-    font-style: bold;
+    line-height: 1.4rem;
     color: #EEE;
-}
-
-.portfolio h4 {
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 p {
     font-family: Pitch-regular;
-    font-size: 1rem
+    font-size: 1rem;
     font-weight: normal;
     line-height: 1.4rem;
     color: #EEE;
@@ -170,27 +156,13 @@ p {
     margin: 50px 0 25px;
 }
 
-.portfolio .logo {
-    max-width: 239px;
-}
-
-.photo {
-    margin-top: 21px;
-    width: 125px;
-}
-
-.month {
-    margin-top: 16px;
-}
-
 .text {
-    max-width: 600px;
     padding-bottom: 25px;
 }
 
-.text img {
-    margin-top: 24px;
-}
+.footer {
+    color: #1F1F1F;
+ }
 
 a { 
     color: #EEE;
@@ -200,18 +172,6 @@ a {
 a:hover {
     text-decoration: none;
 }
-
-body.portfolio {
-    background-color: #F8F2ED;
-}
-
-.portfolio h2, .portfolio h3, .portfolio h4, .portfolio p, .portfolio a {
-    color: #0E0E0E;
- }
-
- #footer {
-    color: #252525;
- }
 
 @media (min-width: 768px) {
     .main {
