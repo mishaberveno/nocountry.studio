@@ -126,6 +126,10 @@ body {
     background-color: #0E0E0E;
 }
 
+body.gist {
+    background-color: #fff;
+}
+
 @font-face {
    font-family: 'Pitch-regular';
    src: url('/assets/fonts/pitch-regular.woff2') format('woff2');
@@ -138,6 +142,13 @@ body {
    src: url('/assets/fonts/pitch-bold.woff2') format('woff2');
    font-weight: normal;
    font-style: bold;
+}
+
+@font-face {
+   font-family: 'Pitch-regular-italic';
+   src: url('/assets/fonts/pitch-regular-italic.woff2') format('woff2');
+   font-weight: normal;
+   font-style: italic;
 }
 
 h1 {
@@ -161,7 +172,7 @@ h3 {
     color: #EEE;
 }
 
-p {
+p, form, ul, ol, li {
     font-family: Pitch-regular;
     font-size: 1rem;
     font-weight: normal;
@@ -169,9 +180,52 @@ p {
     color: #EEE;
 }
 
+strong {
+    font-family: Pitch-bold;
+    font-weight: normal;
+}
+
+em {
+    font-family: Pitch-regular-italic;
+}
+
+h1.gist {
+    display: block;
+    font-family: Pitch-regular;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #0E0E0E;
+    margin-top: -15px;
+
+}
+
+h2.gist {
+    color: #0E0E0E;
+    margin-bottom: -5px;
+}
+
+h2.letter {
+    color: #0E0E0E;
+    margin-top: 50px;
+    margin-bottom: -5px;
+}
+
+h3.gist, p.gist, form.gist, ul.gist, li.gist {
+    color: #0E0E0E;
+}
+
+p.line {
+    margin-top: 25px;
+}
+
 .logo {
     max-width: 300px;
     margin: 50px 0 25px;
+}
+
+.logo-gist {
+    max-width: 100px;
+    margin: 50px 0 50px;
 }
 
 .text {
@@ -179,7 +233,11 @@ p {
 }
 
 .footer {
-    color: #1F1F1F;
+    color: #383838;
+ }
+
+ .footer-gist {
+    color: #D0D0D0;
  }
 
 a { 
@@ -187,8 +245,39 @@ a {
     text-decoration: underline;
 }
 
+a.gist {
+    color: #0E0E0E;
+}
+
 a:hover {
     text-decoration: none;
+}
+
+blockquote {
+   padding: 0em;
+   margin-left: 40px;
+   background: transparent;
+}
+
+input {
+    border-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #333;
+}
+
+input[type="submit"] {
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+
+input[type="submit"]:hover {
+    text-decoration: none;
+}
+
+input[type="email"]:focus {
+    outline: none;
 }
 
 @media (min-width: 768px) {
