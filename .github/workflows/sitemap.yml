@@ -29,24 +29,6 @@ jobs:
           npm install -g sitemap-generator-cli  # Install the sitemap generator
           sitemap-generator https://nocountry.studio -o sitemap.xml -l # Replace with your site URL
 
-      - name: Check permissions and file
-        run: |
-          ls -l sitemap.xml
-          if [ -s sitemap.xml ]; then
-            echo "sitemap.xml has content."
-          else
-            echo "sitemap.xml is empty."
-          fi
-
-      - name: List files in the working directory
-        run: ls -al
-
-      - name: Confirm git status
-        run: |
-          git status
-          echo "Listing files in the working directory:"
-          ls -al
-
       - name: Set up SSH for git push
         run: |
           mkdir -p ~/.ssh
