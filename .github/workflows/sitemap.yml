@@ -29,9 +29,6 @@ jobs:
           npm install -g sitemap-generator-cli  # Install the sitemap generator
           sitemap-generator https://nocountry.studio -o sitemap.xml -l # Replace with your site URL
 
-      - name: Check .gitignore
-        run: cat .gitignore
-
       - name: Check permissions and file
         run: |
           ls -l sitemap.xml
