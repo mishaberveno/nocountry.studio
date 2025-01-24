@@ -51,20 +51,13 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Ensure the sitemap.xml file is created
-          if [ ! -f sitemap.xml ]; then
-            echo "Creating sitemap.xml as it doesn't exist."
-            touch sitemap.xml
-          fi
-
-          # Add the sitemap to the staging area
-          git add sitemap.xml
+          # Ensure sitemap.xml is added to the git index
+          git add sitemap.xml  # Explicitly add sitemap.xml to the staging area
           
           # Check if sitemap.xml has been modified
           if git diff --exit-code sitemap.xml; then
             echo "No changes detected, skipping commit."
           else
-            git add sitemap.xml  # Add the generated sitemap to the git index
             git commit -m "auto-generated sitemap"  # Commit the change
             git push origin main  # Push to the main branch (adjust if you're pushing to a different branch)
           fi
