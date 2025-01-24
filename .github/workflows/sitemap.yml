@@ -29,6 +29,9 @@ jobs:
           npm install -g sitemap-generator-cli  # Install the sitemap generator
           sitemap-generator https://nocountry.studio -o sitemap.xml -l # Replace with your site URL
 
+      - name: Debug: List files
+        run: ls -al
+
       - name: Set up SSH for git push
         run: |
           mkdir -p ~/.ssh
