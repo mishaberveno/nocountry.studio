@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '22'
 
-      # Install and generate the sitemap (using sitemap-generator-cli as an example)
+      # Install and generate the sitemap
       - name: Generate Sitemap
         run: |
           npm install -g sitemap-generator-cli  # Install the sitemap generator
