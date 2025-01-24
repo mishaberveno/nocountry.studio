@@ -29,11 +29,26 @@ jobs:
           npm install -g sitemap-generator-cli  # Install the sitemap generator
           sitemap-generator https://nocountry.studio -o sitemap.xml -l # Replace with your site URL
 
+      - name: Check .gitignore
+        run: cat .gitignore
+
+      - name: Check permissions and file
+        run: |
+          ls -l sitemap.xml
+          if [ -s sitemap.xml ]; then
+            echo "sitemap.xml has content."
+          else
+            echo "sitemap.xml is empty."
+          fi
+
       - name: List files in the working directory
         run: ls -al
 
-      - name: Check if sitemap.xml is tracked
-        run: git status
+      - name: Confirm git status
+        run: |
+          git status
+          echo "Listing files in the working directory:"
+          ls -al
 
       - name: Set up SSH for git push
         run: |
@@ -51,11 +66,18 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Ensure sitemap.xml is added to the git index
-          git add .  # Explicitly add sitemap.xml to the staging area
-          
-          # Check if sitemap.xml has been modified
-          if git diff --exit-code sitemap.xml; then
+          # Print the current directory for debugging
+          echo "Current directory:"
+          pwd
+          echo "Listing files in the current directory:"
+          ls -al
+
+          # Force add sitemap.xml
+          git add sitemap.xml
+          git status
+
+          # Check if sitemap.xml has been staged for commit
+          if git diff --cached --exit-code; then
             echo "No changes detected, skipping commit."
           else
             git commit -m "auto-generated sitemap"  # Commit the change
