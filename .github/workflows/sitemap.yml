@@ -3,7 +3,7 @@ name: Generate Sitemap
 on:
   push:
     branches:
-      - main  # Adjust this if you are using a different branch (e.g., 'master')
+      - main  # Adjust this if you are using a different branch
 
 jobs:
   generate-sitemap:
