@@ -44,6 +44,12 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Ensure the sitemap.xml file is created
+          if [ ! -f sitemap.xml ]; then
+            echo "Creating sitemap.xml as it doesn't exist."
+            touch sitemap.xml
+          fi
           
           # Check if sitemap.xml has been modified
           if git diff --exit-code sitemap.xml; then
