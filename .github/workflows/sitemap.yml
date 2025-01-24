@@ -50,6 +50,9 @@ jobs:
             echo "Creating sitemap.xml as it doesn't exist."
             touch sitemap.xml
           fi
+
+          # Add the sitemap to the staging area
+          git add sitemap.xml
           
           # Check if sitemap.xml has been modified
           if git diff --exit-code sitemap.xml; then
