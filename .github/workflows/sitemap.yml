@@ -32,6 +32,9 @@ jobs:
       - name: List files in the working directory
         run: ls -al
 
+      - name: Check if sitemap.xml is tracked
+        run: git status
+
       - name: Set up SSH for git push
         run: |
           mkdir -p ~/.ssh
