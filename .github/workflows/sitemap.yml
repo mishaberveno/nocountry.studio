@@ -52,7 +52,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
           # Ensure sitemap.xml is added to the git index
-          git add sitemap.xml  # Explicitly add sitemap.xml to the staging area
+          git add .  # Explicitly add sitemap.xml to the staging area
           
           # Check if sitemap.xml has been modified
           if git diff --exit-code sitemap.xml; then
