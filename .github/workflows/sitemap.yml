@@ -41,15 +41,8 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Print the current directory for debugging
-          echo "Current directory:"
-          pwd
-          echo "Listing files in the current directory:"
-          ls -al
-
           # Force add sitemap.xml
           git add sitemap.xml
-          git status
 
           # Check if sitemap.xml has been staged for commit
           if git diff --cached --exit-code; then
