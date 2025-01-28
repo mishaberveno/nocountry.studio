@@ -131,21 +131,21 @@ body.gist {
 }
 
 @font-face {
-   font-family: 'Pitch-regular';
+   font-family: 'Pitch';
    src: url('/assets/fonts/pitch-regular.woff2') format('woff2');
    font-weight: normal;
    font-style: normal;
 }
  
 @font-face {
-   font-family: 'Pitch-bold';
+   font-family: 'Pitch';
    src: url('/assets/fonts/pitch-bold.woff2') format('woff2');
-   font-weight: normal;
-   font-style: bold;
+   font-weight: bold;
+   font-style: normal;
 }
 
 @font-face {
-   font-family: 'Pitch-regular-italic';
+   font-family: 'Pitch';
    src: url('/assets/fonts/pitch-regular-italic.woff2') format('woff2');
    font-weight: normal;
    font-style: italic;
@@ -157,43 +157,50 @@ h1 {
 }
 
 h2 {
-    font-family: Pitch-regular;
+    font-family: Pitch;
     font-size: 1.4rem;
     font-weight: normal;
+    font-style: normal;
     color: #EEE;
     margin-top: -15px;
 }
 
 h3 {
-    font-family: Pitch-bold;
+    font-family: Pitch;
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: bold;
+    font-style: normal;
     line-height: 1.4rem;
     color: #EEE;
 }
 
 p, form, ul, ol, li {
-    font-family: Pitch-regular;
+    font-family: Pitch;
     font-size: 1rem;
     font-weight: normal;
+    font-style: normal;
     line-height: 1.4rem;
     color: #EEE;
 }
 
 strong {
-    font-family: Pitch-bold;
-    font-weight: normal;
+    font-family: Pitch;
+    font-weight: bold;
+    font-style: normal;
 }
 
 em {
-    font-family: Pitch-regular-italic;
+    font-family: Pitch;
+    font-weight: normal;
+    font-style: italic;
 }
 
 h1.gist {
     display: block;
-    font-family: Pitch-regular;
+    font-family: Pitch;
     font-size: 1.4rem;
     font-weight: normal;
+    font-style: normal;
     color: #0E0E0E;
     margin-top: -15px;
 
