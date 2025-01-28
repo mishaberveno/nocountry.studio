@@ -249,6 +249,10 @@ a.gist {
     color: #0E0E0E;
 }
 
+a.home {
+    text-decoration: none;
+}
+
 a:hover {
     text-decoration: none;
 }
