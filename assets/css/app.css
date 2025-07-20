@@ -156,52 +156,6 @@ footer {
     font-weight: 400;
 }
 
-/* THE GIST OF */
-
-body.gist {
-    background-color: var(--color-bg-inv);
-    color: var(--color-text-inv);
-}
-
-h1.letter {
-    margin-bottom: 2rem;
-}
-
-h2.letter {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin: 3.5rem 0 1rem;
-}
-
-blockquote {
-   padding: 0;
-   margin: 1rem 0 1rem 2.5rem;
-   background: transparent;
-}
-
-ul.letter, ol.letter {
-    margin: 1rem 0;
-}
-
-a.gist {
-    color: var(--color-text-inv);
-}
-
-.content .logo-gist {
-    max-width: 100px;
-    margin: 3rem 0 2rem;
-}
-
-p.line {
-    margin-top: 1.5rem;
-}
-
-footer.gist {
-    color: var(--color-footer-inv);
-}
-
-/* GRID */
-
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
