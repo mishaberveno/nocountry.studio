@@ -8,7 +8,6 @@
     --color-bg: #0E0E0E;
     --color-text: #EEE;
     --color-footer: #383838;
-    --color-border: #333;
     --color-bg-inv: #FFF;
     --color-text-inv: #0E0E0E;
     --color-footer-inv: #D0D0D0;
@@ -94,25 +93,31 @@ a:hover {
 }
 
 input {
+    background: var(--color-bg);
     border-style: none;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: var(--color-border);
+    border-bottom-color: var(--color-text);
     font-family: 'Pitch', monospace;
     font-size: 1rem;
     font-weight: 400;
-    color: var(--color-text-inv);
+    color: var(--color-text);
     line-height: 1.4rem;
+    margin-top: 1rem;
 }
 
 input[type="submit"] {
-    background: none;
+    background: var(--color-bg);
     border: none;
     text-decoration: underline;
 }
 
 input[type="submit"]:hover {
     text-decoration: none;
+}
+
+input[type="email"] {
+    width: 18rem;
 }
 
 input[type="email"]:focus {
@@ -122,6 +127,10 @@ input[type="email"]:focus {
 footer {
     color: var(--color-footer);
     margin-bottom: 2.75rem;
+}
+
+footer:hover {
+    color: var(--color-text);
 }
 
 .youtube {
