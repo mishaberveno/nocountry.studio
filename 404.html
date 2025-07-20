@@ -15,44 +15,46 @@
 	<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#f9f9f9">
 
-    <title>404 | No Country Studio</title>
+    <title>404 Error | No Country Studio</title>
     <meta name="description" content="This page doesn’t exist. Who knows why.">
 	
     <meta property="og:url" content="https://nocountry.studio/404"> 
-  	<meta property="og:title" content="404 | No Country Studio">
+  	<meta property="og:title" content="404 Error | No Country Studio">
   	<meta property="og:description" content="This page doesn’t exist. Who knows why."> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="/assets/css/normalize.css">
 	<link rel="stylesheet" href="/assets/css/app.css">
     <link rel="canonical" href="https://nocountry.studio/404">
 
 </head>
 <body>
-    <div class="grid">
-        <header>
-            <div class="main">
-                <div class="col-4 float-left"></div>
-                <div class="col-8 float-right">
-                    <div class="float-left">
-                        <h1><a href="/"><img src="/assets/logo/no-country-studio-logo-white.png" alt="No Country Studio logo white" class="logo"></a></h1>
-                        <h2>{ 404 Error }</h2>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-        <div class="main about">
-            <div class="col-4 float-left">
-                <div class="float-right"></div>
-            </div>
-
-            <div class="col-8 text float-right">
-                <div class="float-left">
-                    <p>This page doesn’t exist. Go back to the <a href="/">homepage</a>.</p>
-                </div>
-            </div>
+    <header class="grid">
+        <div class="content">
+            <a href="/"><img src="/assets/logo/no-country-studio-logo-white.png" alt="No Country Studio logo white" class="logo"></a>
+            <h1>{ 404 Error }</h1>
         </div>
-    </div>
+    </header>
+    
+    <main>
+        <section class="grid">
+            <div class="content">
+                <p>This page doesn’t exist. Go back to the <a href="/">homepage</a>.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="grid">
+        <div class="label">
+            <h2>2018–<span id="year"></span></h2>
+        </div>
+
+        <div class="content">
+            <p>Unus sed leo.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
