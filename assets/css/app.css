@@ -192,3 +192,19 @@ footer:hover {
 .content {
     grid-column: 5 / 13;
 }
+
+@media (max-width: 768px) {
+    .grid {
+    grid-template-columns: 1fr;
+    padding-inline: 1rem;
+    }
+
+    .label {
+        grid-column: auto;
+        text-align: left;
+    }
+
+    .content {
+        grid-column: auto;  
+    } 
+}
