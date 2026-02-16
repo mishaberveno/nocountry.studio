@@ -76,10 +76,12 @@ em {
 a { 
     color: var(--color-text);
     text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: text-decoration-color 200ms;
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration-color: transparent;
 }
 
 input {
