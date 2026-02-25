@@ -98,6 +98,10 @@ input {
     margin-top: 1rem;
 }
 
+#input-home {
+    margin-top: 0rem;
+}
+
 button[type="submit"] {
     font-family: 'Pitch', monospace;
     font-size: 1rem;
