@@ -95,7 +95,7 @@ input {
     font-weight: 400;
     color: var(--color-text);
     line-height: 1.4rem;
-    margin-top: 0rem;
+    margin-top: 1rem;
 }
 
 button[type="submit"] {
