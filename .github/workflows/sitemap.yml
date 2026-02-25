@@ -3,27 +3,27 @@ name: Generate Sitemap
 on:
   push:
     branches:
-      - main  # Adjust this if you are using a different branch
+      - main
 
 jobs:
   generate-sitemap:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: 'npm'
 
-      # Install and generate the sitemap
+      - name: Install sitemap generator
+        run: npm install -g sitemap-generator-cli
+
       - name: Generate Sitemap
-        run: |
-          npm install -g sitemap-generator-cli  # Install the sitemap generator
-          sitemap-generator https://nocountry.studio -o sitemap.xml -l # Replace with your site URL
+        run: sitemap-generator https://nocountry.studio -o sitemap.xml -l
 
       - name: Set up SSH for git push
         run: |
@@ -33,24 +33,18 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           git config --global url."git@github.com:".insteadOf "https://github.com/"
         env:
-          GITHUB_SSH_PRIVATE_KEY: ${{ secrets.SSH_GENERATE_SITEMAP }}  # Add your private key to GitHub secrets
+          GITHUB_SSH_PRIVATE_KEY: ${{ secrets.SSH_GENERATE_SITEMAP }}
 
-      # Commit and push the generated sitemap to the repo
       - name: Commit and Push the Sitemap
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Force add sitemap.xml
           git add sitemap.xml
-
-          # Check if sitemap.xml has been staged for commit
           if git diff --cached --exit-code; then
             echo "No changes detected, skipping commit."
           else
-            git commit -m "auto-generated sitemap"  # Commit the change
-            git push origin main  # Push to the main branch (adjust if you're pushing to a different branch)
+            git commit -m "auto-generated sitemap"
+            git push origin main
           fi
-
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub Actions token automatically provided
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
