@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
@@ -16,15 +15,22 @@
     <meta name="theme-color" content="#f9f9f9">
 
     <title>Work | No Country Studio</title>
-    <meta name="description" content="From 2018 to 2025, No Country Studio delivered 800+ projects for 50+ clients. View the select copywriting portfolio.">
+    <meta name="description" content="From 2018 to 2025, No Country Studio delivered 800+ projects for 50+ tech clients. View the select copywriting portfolio.">
     
     <meta property="og:url" content="https://nocountry.studio/work">
     <meta property="og:title" content="Work | No Country Studio">
-    <meta property="og:description" content="From 2018 to 2025, No Country Studio delivered 800+ projects for 50+ clients. View the select copywriting portfolio.">
+    <meta property="og:description" content="From 2018 to 2025, No Country Studio delivered 800+ projects for 50+ tech clients. View the select copywriting portfolio.">
     <meta property="og:image" content="https://nocountry.studio/assets/images/og/work.webp">
     <meta property="og:image:type" content="image/webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Work | No Country Studio">
+    <meta name="twitter:description" content="From 2018 to 2025, No Country Studio delivered 800+ projects for 50+ tech clients. View the select copywriting portfolio.">
+    <meta name="twitter:image" content="https://nocountry.studio/assets/images/og/work.webp">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="canonical" href="https://nocountry.studio/work">
@@ -49,15 +55,9 @@
 
                 <p>To follow current projects, sign up for <a href="https://nofinalform.com" rel="me noopener" target="_blank">No Final Form</a>:</p>
 
-                <form
-                  action="https://buttondown.com/api/emails/embed-subscribe/nocountrystudio"
-                  method="post"
-                  target="popupwindow"
-                  onsubmit="window.open('https://nofinalform.com', 'popupwindow')"
-                  class="embeddable-buttondown-form gist"
-                >
-                  <input type="email" name="email" id="bd-email" placeholder="Enter your email" />
-                  <input type="submit" value="Subscribe"/>
+                <form action="https://buttondown.com/api/emails/embed-subscribe/nofinalform" method="post">
+                    <input type="email" name="email" autocomplete="email" placeholder="Enter your email" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your email'" />
+                    <button type="submit">Subscribe</button>
                 </form>
             </div>
         </section>

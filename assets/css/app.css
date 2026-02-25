@@ -98,6 +98,24 @@ input {
     margin-top: 1rem;
 }
 
+button[type="submit"] {
+    font-family: 'Pitch', monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    background: var(--color-bg);
+    border-style: none;
+    text-decoration: underline;
+    text-decoration-color: var(--color-text);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 200ms;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+button[type="submit"]:hover {
+    text-decoration-color: transparent;
+}
+
 input[type="submit"] {
     background: var(--color-bg);
     border: none;
@@ -109,7 +127,7 @@ input[type="submit"]:hover {
 }
 
 input[type="email"] {
-    width: 18rem;
+    width: 15rem;
 }
 
 input[type="email"]:focus {
