@@ -6,15 +6,19 @@
 
     <meta name="robots" content="noindex, follow">
 
+    <link rel="preload" href="/assets/fonts/pitch-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/pitch-regular-italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/pitch-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <title>404 Error | No Country Studio</title>
+    <meta name="description" content="This page doesn’t exist. Who knows why.">
+
 	<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="No Country" />
     <link rel="manifest" href="/assets/favicons/site.webmanifest" />
-
-    <title>404 Error | No Country Studio</title>
-    <meta name="description" content="This page doesn’t exist. Who knows why.">
 	
     <meta property="og:url" content="https://nocountry.studio/404"> 
   	<meta property="og:title" content="404 Error | No Country Studio">
@@ -27,7 +31,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@mishaberveno">
     
-	<link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="preload" href="/assets/css/app.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/app.css"></noscript>
 </head>
 
 <body>

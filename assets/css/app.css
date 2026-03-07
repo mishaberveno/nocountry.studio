@@ -15,6 +15,7 @@
    src: url('/assets/fonts/pitch-regular.woff2') format('woff2');
    font-weight: 400;
    font-style: normal;
+   font-display: swap;
 }
  
 @font-face {
@@ -22,6 +23,7 @@
    src: url('/assets/fonts/pitch-bold.woff2') format('woff2');
    font-weight: 700;
    font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
@@ -29,6 +31,7 @@
    src: url('/assets/fonts/pitch-regular-italic.woff2') format('woff2');
    font-weight: 400;
    font-style: italic;
+   font-display: swap;
 }
 
 body {
