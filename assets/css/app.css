@@ -141,6 +141,7 @@ input[type="email"]:focus {
 footer {
     color: var(--color-footer);
     margin-bottom: 2.75rem;
+    transition: color 200ms;
 }
 
 footer:hover {
